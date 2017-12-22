@@ -84,4 +84,4 @@ In the next post, we'll look at building a simple Neural Network from scratch us
 
 Cheerios. And keep learning deep.
 
-[!Deep Learning]({{ site.baseurl }}/images/dl.jpg)
+![Deep Learning]({{ site.baseurl }}/images/dl.png)
