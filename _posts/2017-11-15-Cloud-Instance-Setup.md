@@ -13,7 +13,7 @@ AWS and GCP have a generous free tier(especially Google) so if you haven't alrea
 
 To keep it simple and cost effective, we'll be covering two alternatives here: Crestle and GCP. So let's get started:
 
-1. Crestle
+#H2 1. Crestle
 
 Crestle is the simplest alternative for setting up a GPU enabled cloud instance. There are no terminals to play around with, making the setup very simple.
 
