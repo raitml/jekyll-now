@@ -3,8 +3,6 @@ layout: post
 title: Cloud Instance Setup
 ---
 
-Hello! 
-
 The first step for Neural Networks any of us have to do is to setup a cloud instance/local machine. GPUs are the bread and butter for neural networks and an absolute must to achieve any kind of efficiency.
 
 There are many options to choose from, including Crestle, Paperspace, GCP and AWS. For an overview on the same, please head to Sanyam Bhutani's excellent post comparing the different frameworks [here](https://medium.com/ai-saturdays/cloud-setup-tutorial-part-0-53d42dd4c733)
