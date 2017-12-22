@@ -13,7 +13,7 @@ AWS and GCP have a generous free tier(especially Google) so if you haven't alrea
 
 To keep it simple and cost effective, we'll be covering two alternatives here: Crestle and GCP. So let's get started:
 
-## H2 Crestle
+## Crestle
 
 Crestle is the simplest alternative for setting up a GPU enabled cloud instance. There are no terminals to play around with, making the setup very simple.
 
@@ -24,7 +24,7 @@ Just use the GPU toggle button to switch on/off a GPU instance. Just click on th
 ![_config.yml]({{ site.baseurl }}/images/crestle.png) 
 It's recommended to setup up an instance without the GPU, download all the necessary datasets and utility files. Once you're done, you can go back on and switch on the GPU to run the neural network.
 
-## H2 GCP
+## GCP
 
 GCP is the Google Cloud Platform and is Google's answer to the mammoth that is AWS. GCP provides new accounts with a generous one year trial with 300$ credit that's very helpful for a beginner. Their GPU instances are also competitively priced and are always updated with the newest GPUs from NVIDIA.
 
