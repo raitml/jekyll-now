@@ -127,4 +127,4 @@ For troubleshooting, follow this guide on [GitHub](https://github.com/eshvk/gcp-
 
 Phew! That was a lot of command line hassling. Crestle did all that in one go, whereas Google gives a 300$ credit to play around with so choose your pick.
 
-#### Remember to **shut down the instance when you're done** working or you'll be left with a hole in your pocket.
+Remember to **shut down the instance when you're done** working or you'll be left with a hole in your pocket.
