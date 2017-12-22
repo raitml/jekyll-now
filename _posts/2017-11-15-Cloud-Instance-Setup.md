@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Beginner Resources!
+title: Cloud Instance Setup!
 ---
 
 Hello!
