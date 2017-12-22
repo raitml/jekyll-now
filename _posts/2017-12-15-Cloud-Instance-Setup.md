@@ -55,20 +55,23 @@ sudo apt-get --assume-yes install software-properties-common
 
 The next step is to download and install the CUDA drivers for the NVIIDA GPUs. Use the following script 
 
-`#!/bin/bash`
-`echo "Checking for CUDA and installing."`
-`# Check for CUDA and try to install.`
-`if ! dpkg-query -W cuda-8-0; then`
-`  # The 16.04 installer works with 16.10.`
-`  curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb`
-`  dpkg -i ./cuda-repo-ubuntu1604_8.0.61-1_amd64.deb`
-`  apt-get update`
-`  apt-get install cuda-8-0 -y`
-`fi`
+```
+#!/bin/bash
+echo "Checking for CUDA and installing."
+# Check for CUDA and try to install.
+if ! dpkg-query -W cuda-8-0; then
+  # The 16.04 installer works with 16.10.
+  curl -O http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+  dpkg -i ./cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+  apt-get update
+  apt-get install cuda-8-0 -y
+fi
+```
 
 To verify the installation, run the following code
-
-`nvidia-smi -pm 1`
+```
+nvidia-smi -pm 1
+```
 
 You should get the following as output
 
@@ -76,43 +79,49 @@ You should get the following as output
 
 The next step is to download the [cuDNN](https://developer.nvidia.com/cudnn)library which is especially designed to speed up NN calculations on NVIDIA GPUs. Download the latest cuDNN package for CUDA 8.0
 
-`#install cudnn libraries`
-`wget "http://files.fast.ai/files/cudnn.tgz" -O "cudnn.tgz"`
-`tar -zxf cudnn.tgz`
-`cd cuda`
-`sudo cp lib64/* /usr/local/cuda/lib64/`
-`sudo cp include/* /usr/local/cuda/include/`
+#install cudnn libraries
+```
+wget "http://files.fast.ai/files/cudnn.tgz" -O "cudnn.tgz"
+tar -zxf cudnn.tgz
+cd cuda
+sudo cp lib64/* /usr/local/cuda/lib64/
+sudo cp include/* /usr/local/cuda/include/
+```
 
 Alas, we're not done yet! The next step is to download the Anaconda distribution and th Keras libraries
-
-`cd ~`
-`mkdir downloads`
-`cd downloads`
-`wget "https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh" -O "Anaconda2-4.2.0-Linux-x86_64.sh"`
-`bash "Anaconda2-4.2.0-Linux-x86_64.sh" -b`
+```
+cd ~
+mkdir downloads
+cd downloads
+wget "https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh" -O "Anaconda2-4.2.0-Linux-x86_64.sh"
+bash "Anaconda2-4.2.0-Linux-x86_64.sh" -b
+```
 
 Setup the Anaconda path variables 
-
-`echo "export PATH=\"$HOME/anaconda2/bin:\$PATH\"" >> ~/.bashrc`
-`export PATH="$HOME/anaconda2/bin:$PATH"`
-`conda install -y bcolz`
-`conda upgrade -y --all`
+```
+echo "export PATH=\"$HOME/anaconda2/bin:\$PATH\"" >> ~/.bashrc
+export PATH="$HOME/anaconda2/bin:$PATH"
+conda install -y bcolz
+conda upgrade -y --all
+```
 
 To install and configure Keras
-
-`pip install keras==1.2.2`
-`mkdir ~/.keras`
-`echo '{`
-`    "image_dim_ordering": "th",`
-`    "epsilon": 1e-07,`
-`    "floatx": "float32",`
-`    "backend": "tensorflow"`
-`}' > ~/.keras/keras.json`
+```
+pip install keras==1.2.2
+mkdir ~/.keras
+echo '{
+    "image_dim_ordering": "th",
+    "epsilon": 1e-07,
+    "floatx": "float32",
+    "backend": "tensorflow"
+}' > ~/.keras/keras.json
+```
 
 To install Tensorflow
-
-`sudo apt-get install python-dev python-pip libcupti-dev`
-`sudo pip install tensorflow-gpu`
+```
+sudo apt-get install python-dev python-pip libcupti-dev
+sudo pip install tensorflow-gpu
+```
 
 For troubleshooting, follow this guide on [GitHub](https://github.com/eshvk/gcp-dl)
 
