@@ -29,8 +29,9 @@ It's recommended to setup up an instance without the GPU, download all the neces
 
 ## GCP 
 
-GCP is the Google Cloud Platform and is Google's answer to the mammoth that is AWS. GCP provides new accounts with a generous one year trial with 300$ credit that's very helpful for a beginner. Their GPU instances are also competitively priced and are always updated with the latest offerings from NVIDIA.
+GCP is the Google Cloud Platform and is Google's answer to the mammoth that is AWS. GCP provides new users with a generous 300$ credit that comes in handy for beginners. Their GPU instances are also competitively priced and updated with the latest offerings from NVIDIA.
 
 Unlike Crestle, GCP setup is a lot more complicated and requires multiple steps. We'll be covering the web GUI as it's easier to navigate for beginners.
+
 
 
