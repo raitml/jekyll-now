@@ -16,15 +16,16 @@ To keep it simple and cost effective, we'll be covering two alternatives here: C
 So let's get started!
 
 ## Crestle
+------
 
 Crestle is the simplest alternative for setting up a GPU enabled cloud instance. There are no terminals to play around with, making the setup a breeze. 
 
 Just head on over to [Crestle](https://www.crestle.com) and sign up for an account. Once the setup formalities are done, things get simpler.
 
-Just use the GPU toggle button to switch on/off a GPU instance. Click on the 'Start Jupyter' button to head on over to your new jupyter notebook. You can also switch to a terminal session later on if you prefer...
+Just use the GPU toggle button to switch on/off a GPU instance. Click on the 'Start Jupyter' button to head on over to your new jupyter notebook. You can also switch to a terminal session later on if you prefer.
 
 ![_config.yml]({{ site.baseurl }}/images/crestle.png) 
-It's recommended to setup up an instance without the GPU, download all the necessary datasets and utility files. Once you're done, you can go back on and switch on the GPU to run the neural network.
+It's recommended to setup up an instance without the GPU, download all the necessary datasets and utility files. Once you're done, you can go back on and switch on the GPU to run the neural network *same paragraph*.
 
 ## GCP
 
