@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cloud Instance Setup!
+title: Cloud Instance Setup
 ---
 
 Hello!
