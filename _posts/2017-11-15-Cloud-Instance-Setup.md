@@ -24,10 +24,13 @@ Just head on over to [Crestle](https://www.crestle.com) and sign up for an accou
 Just use the GPU toggle button to switch on/off a GPU instance. Click on the 'Start Jupyter' button to head on over to your new jupyter notebook. You can also switch to a terminal session later on if you prefer.
 
 ![_config.yml]({{ site.baseurl }}/images/crestle.png) 
+
 It's recommended to setup up an instance without the GPU, download all the necessary datasets and utility files. Once you're done, you can go back on and switch on the GPU to run the neural network *same paragraph*.
 
 ## GCP 
 
-GCP is the Google Cloud Platform and is Google's answer to the mammoth that is AWS. GCP provides new accounts with a generous one year trial with 300$ credit that's very helpful for a beginner. Their GPU instances are also competitively priced and are always updated with the newest GPUs from NVIDIA.
+GCP is the Google Cloud Platform and is Google's answer to the mammoth that is AWS. GCP provides new accounts with a generous one year trial with 300$ credit that's very helpful for a beginner. Their GPU instances are also competitively priced and are always updated with the latest offerings from NVIDIA.
 
-Unlike Crestle, GCP setup is a lot more complicated and requires multiple steps. We'll be covering the web GUI as it's simpler. 
+Unlike Crestle, GCP setup is a lot more complicated and requires multiple steps. We'll be covering the web GUI as it's easier to navigate for beginners.
+
+
