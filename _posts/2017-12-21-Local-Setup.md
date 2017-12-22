@@ -65,7 +65,9 @@ wget https://raw.githubusercontent.com/fastai/courses/master/requirements.txt
 This should install all the required dependencies that are necessary for setup. If there are any that I've left out, use the following syntax to install
 ```
 conda install -n myenv package_name
-``` where package_name reflects the package you want to install and myenv is your environment name
+``` 
+
+The package_name reflects the package you want to install and myenv is your environment name
 
 To install Tensorflow
 ```
@@ -73,6 +75,7 @@ conda install -c conda-forge tensorflow
 ```
 
 Verify the installation by executing the following within the environment
+
 ```
 import tensorflow
 print('tensorflow: %s' % tensorflow.__version__)
