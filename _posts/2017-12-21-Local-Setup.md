@@ -67,7 +67,7 @@ This should install all the required dependencies that are necessary for setup. 
 conda install -n myenv package_name
 ``` 
 
-The package_name reflects the package you want to install and myenv is your environment name
+The *package_name* reflects the package you want to install and *myenv* is your environment name
 
 To install Tensorflow
 ```
