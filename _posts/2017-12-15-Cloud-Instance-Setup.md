@@ -77,7 +77,7 @@ You should get the following as output
 
 ![SMI install verification]({{ site.baseurl }}/images/smi.png) 
 
-The next step is to download the [cuDNN](https://developer.nvidia.com/cudnn)library which is especially designed to speed up NN calculations on NVIDIA GPUs. Download the latest cuDNN package for CUDA 8.0
+The next step is to download the [cuDNN](https://developer.nvidia.com/cudnn) library which is especially designed to speed up NN calculations on NVIDIA GPUs. Download the latest cuDNN package for CUDA 8.0
 
 #install cudnn libraries
 ```
