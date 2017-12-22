@@ -79,7 +79,7 @@ You should get the following as output
 
 The next step is to download the [cuDNN](https://developer.nvidia.com/cudnn) library which is especially designed to speed up NN calculations on NVIDIA GPUs. Download the latest cuDNN package for CUDA 8.0
 
-Install cudnn libraries
+Install cuDNN libraries
 ```
 wget "http://files.fast.ai/files/cudnn.tgz" -O "cudnn.tgz"
 tar -zxf cudnn.tgz
