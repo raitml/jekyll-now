@@ -79,7 +79,7 @@ The next step is to download the [cuDNN](https://developer.nvidia.com/cudnn) lib
 
 Install cuDNN libraries
 ```
-wget "http://files.fast.ai/files/cudnn.tgz" -O "cudnn.tgz"
+wget http://files.fast.ai/files/cudnn.tgz" -O "cudnn.tgz
 tar -zxf cudnn.tgz
 cd cuda
 sudo cp lib64/* /usr/local/cuda/lib64/
@@ -91,7 +91,7 @@ Alas, we're not done yet! The next step is to download the Anaconda distribution
 cd ~
 mkdir downloads
 cd downloads
-wget "https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh" -O "Anaconda2-4.2.0-Linux-x86_64.sh"
+wget https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh" -O "Anaconda2-4.2.0-Linux-x86_64.sh
 bash "Anaconda2-4.2.0-Linux-x86_64.sh" -b
 ```
 
